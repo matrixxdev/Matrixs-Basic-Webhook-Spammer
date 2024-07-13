@@ -1,8 +1,8 @@
-# Info
+## Info
 
 This is a basic discord webhook spamemer tool i made out of pure boredom. Feel free to use and distribute this!
 
-# Requirments
+## Requirments
 
 * Python
 
@@ -10,6 +10,6 @@ This is a basic discord webhook spamemer tool i made out of pure boredom. Feel f
  * requests
  * keyboard
 
-# Extra
+## Extra
 
 My discord is .archbtw. in case you wanna contact me
