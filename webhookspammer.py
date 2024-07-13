@@ -24,7 +24,7 @@ def force_quit():
     os._exit(0)
     
 keyboard.add_hotkey("ctrl+q", force_quit)
-    
+
 print("------------ Matrix's Basic Webhook Spammer V4 ------------")
 
 print("\nWebhook URL:")
@@ -34,16 +34,13 @@ print("\nText to spam:")
 TEXT: str = input(">>> ")
 
 print("\nAmount (Amounts up to 500 is recommended):")
-AMOUNT: str = input(">>> ")
-AMOUNT = int(AMOUNT)
+AMOUNT: int = int(input(">>> "))
 
 print("\nMessage cooldown (So the webhook wont get rate limited all the time) (0.1 for instant but will hit rate limits alot)")
-COOLDOWN: str = input(">>> ")
-COOLDOWN = float(COOLDOWN)
+COOLDOWN: float = float(input(">>> "))
 
 print("\nRate limit cooldown (For how many seconds the webhook spammer will wait if the webhook gets rate limited) (3 recomended)")
-RATE_LIMIT_COOLDOWN: str = input(">>> ")
-RATE_LIMIT_COOLDOWN = float(RATE_LIMIT_COOLDOWN)
+RATE_LIMIT_COOLDOWN: float = float(input(">>> "))
 
 def main() -> None:
     if is_webhook_valid(WEBHOOK_URL) == True:
@@ -53,6 +50,7 @@ def main() -> None:
         
         for _ in range(AMOUNT):
             response = requests.post(url=WEBHOOK_URL, json={"content": TEXT})
+            
             if response.status_code == 429 or response.status_code == "429":
                 print(f"Webhook failed to send message with status code 429 (Too many requests)")
                 sleep(1)
@@ -80,7 +78,6 @@ def main() -> None:
         
         sleep(2)      
         print(f"Successfully spammed the webhook {AMOUNT} times with text \"{TEXT}\" (Webhook URL: {WEBHOOK_URL}). Automatically quiting in 5 seconds.")
-        sleep(5)
         
     else:
         print("\nWebhook URL is invalid or an error has accured. Automatically quiting in 5 seconds")
