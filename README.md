@@ -7,8 +7,8 @@ This is a basic discord webhook spamemer tool i made out of pure boredom. Feel f
 * Python
 
 * Extra Python modules:
- * requests
- * keyboard
+ - requests
+ - keyboard
 
 ## Extra
 
