@@ -14,7 +14,7 @@ def is_webhook_valid(url: str) -> bool:
     print(f"\nWEBHOOK INFO: {test_req_response_string} [For debuging]")
     
     if test_req_response.status_code == 200 or test_req_response.status_code == 204:
-        if  "url" in test_req_response_string and "channel_id" in test_req_response_string and "guild_id" in test_req_response_string:
+        if "url" in test_req_response_string and "channel_id" in test_req_response_string and "guild_id" in test_req_response_string:
             return True
     else:
         return False
