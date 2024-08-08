@@ -16,6 +16,7 @@ This is a basic discord webhook spamemer tool i made out of pure boredom. Feel f
 **Extra Python modules:**
  * requests
  * keyboard
+ 
  **(to install, run pip install -r requirements.txt while in the directory)**
 
 ## Extra
