@@ -4,16 +4,16 @@ This is a basic discord webhook spamemer tool i made out of pure boredom. Feel f
 
 ## Features 
 
-* Rate limit prevention
+**Rate limit prevention**
  * Prevents the webhook from getting rate limited
-* Logging
+**Logging**
  * Idk what to put here. It speaks for itself
 
 ## Requirments
 
-* Python
+**Python**
 
-* Extra Python modules:
+**Extra Python modules:**
  * requests
  * keyboard
 
